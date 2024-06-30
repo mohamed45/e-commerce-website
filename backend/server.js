@@ -200,6 +200,7 @@ const corsOptions = {
   origin: "http://localhost:4200/",
   optionsSuccessStatus: 204,
   methods: "GET, POST, PUT, DELETE",
+  credentials: true,
 };
 
 // Use cors middleware

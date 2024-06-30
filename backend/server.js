@@ -197,7 +197,7 @@ const port = 3000;
 
 // Cors configuration - Allows requests from localhost:4200
 const corsOptions = {
-  origin: "http://localhost:4200",
+  origin: "https://silver-panda-74f40c.netlify.app",
   optionsSuccessStatus: 204,
   methods: "GET, POST, PUT, DELETE",
 };

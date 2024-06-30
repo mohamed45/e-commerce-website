@@ -3,13 +3,15 @@
 // const cors = require("cors");
 
 // const app = express();
-// const port = 3000;
+// // const port = 3000;
+// const port = process.env.PORT;
 
 // // Cors configuration - Allows requests from localhost:4200
 // const corsOptions = {
 //   origin: "http://localhost:4200",
 //   optionsSuccessStatus: 204,
 //   methods: "GET, POST, PUT, DELETE",
+//   credentials: true,
 // };
 
 // // Use cors middleware
@@ -193,11 +195,12 @@ const fs = require("fs");
 const cors = require("cors");
 
 const app = express();
+// const port = process.env.PORT;
 const port = 3000;
 
 // Cors configuration - Allows requests from localhost:4200
 const corsOptions = {
-  origin: "http://localhost:4200/",
+  origin: "https://e-comme-web.netlify.app",
   optionsSuccessStatus: 204,
   methods: "GET, POST, PUT, DELETE",
   credentials: true,

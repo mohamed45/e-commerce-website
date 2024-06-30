@@ -197,7 +197,7 @@ const port = 3000;
 
 // Cors configuration - Allows requests from localhost:4200
 const corsOptions = {
-  origin: "e-comme-web.netlify.app",
+  origin: "https://e-comme-web.netlify.app/",
   optionsSuccessStatus: 204,
   methods: "GET, POST, PUT, DELETE",
 };

@@ -7,6 +7,9 @@ import { ButtonModule } from 'primeng/button';
 // import { Paginator } from 'primeng/paginator';
 // import { MatPaginatorModule } from '@angular/material/paginator';
 
+//http://localhost:3000/clothes
+//https://e-commerce-website-kkmb.onrender.com/clothes
+
 import { CommonModule } from '@angular/common';
 import { EditPopupComponent } from '../components/edit-popup/edit-popup.component';
 
@@ -82,7 +85,7 @@ export class HomeComponent {
   }
   fetchProduct(page: number, perPage: number) {
     this.productsService
-      .getProducts('http://localhost:3000/clothes', { page, perPage })
+      .getProducts('/clothes', { page, perPage })
       .subscribe({
         next: (data: Products) => {
           this.products = data.items;
@@ -96,7 +99,7 @@ export class HomeComponent {
 
   editProduct(product: Product, id: number) {
     this.productsService
-      .editProduct(`http://localhost:3000/clothes/${id}`, product)
+      .editProduct(`/clothes/${id}`, product)
       .subscribe({
         next: (data) => {
           console.log(data);
@@ -110,7 +113,7 @@ export class HomeComponent {
   }
   deleteProduct(id: number) {
     this.productsService
-      .deleteProduct(`http://localhost:3000/clothes/${id}`)
+      .deleteProduct(`/clothes/${id}`)
       .subscribe({
         next: (data) => {
           console.log(data);
@@ -124,7 +127,7 @@ export class HomeComponent {
   }
   addProduct(product: Product) {
     this.productsService
-      .addProduct(`http://localhost:3000/clothes`, product)
+      .addProduct(`/clothes`, product)
       .subscribe({
         next: (data) => {
           console.log(data);

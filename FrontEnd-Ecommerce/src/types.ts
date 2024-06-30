@@ -41,3 +41,10 @@ export interface Products {
     page: number;
     perPage: number;
   }
+
+
+
+  // get<T>(url: string, options: Options): Observable<T> {
+  //   const urle = `${this.apiUrl}${url}`;
+  //   return this.httpClient.get<T>(urle, options) as Observable<T>;
+  // }

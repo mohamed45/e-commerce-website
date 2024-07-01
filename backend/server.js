@@ -197,7 +197,7 @@ const cors = require("cors");
 const app = express();
 // const port = process.env.PORT;
 const port = 3000;
-
+//https://e-comme-web.netlify.app
 // Cors configuration - Allows requests from localhost:4200
 const corsOptions = {
   origin: "https://e-comme-web.netlify.app",
